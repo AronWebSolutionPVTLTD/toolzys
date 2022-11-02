@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  @apply px-5 mx-auto;
+}
+body{
+  @apply text-body-primary-color font-poppins
+}
+.btn{
+  @apply text-sm px-8 py-2 rounded-2xl inline-flex justify-center items-center cursor-pointer font-bold
+}
+.btn-solid{
+  @apply bg-primary-color text-white
+}
+.btn-outline{
+  border: 2px solid rgba(27, 28, 30, 0.3);
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  @apply text-black bg-white
+}
+
+.gradient-bg{
+  background: linear-gradient(96.51deg, #DB557D 0%, #B5224E 100%);
+  @apply text-white;
+}
+.logo_icon_box{
+  @apply border border-solid border-white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nav_link{
+  @apply text-sm text-primary-color font-bold uppercase cursor-pointer
+}
+.monetize_section{
+  min-height: calc(100vh - 104px);
+}
+.hero_content {
+  background: linear-gradient(91.01deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 99.73%);
+  backdrop-filter: blur(20px);
+  @apply absolute top-0 left-0 right-0 px-0 pt-8 pb-16 z-1
+}
+.hero-img{
+  @apply w-full h-full
+}
+.hero-img img{
+  @apply w-full h-full object-cover
+}
+.hero_btn_wrapper .btn{
+  @apply px-8 py-4 rounded-30px
+}
+
+.feature_item .btn{
+  @apply font-medium text-lg
+}
+.image_text_overlay .btn-outline{
+  @apply bg-transparent border-white text-white text-sm py-3 rounded-30px min-w-247px md:min-w-300px
+}
+.newsletter_form input::placeholder{
+  @apply text-dark-grey-color
+}
+.newsletter_form .btn{
+  @apply rounded-20px uppercase text-lg
+}
+.footer_nav_item{
+  @apply mb-4 text-lg leading-7 text-black
+}
+.footer_col{
+  flex-basis: 180px;
+}
+.lang_item {
+  @apply block py-1 px-2
+}
+@media( max-width: 1024px ){
+  .footer_logo_col{
+    flex-basis: 100%;
+  }
+}
+
